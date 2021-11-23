@@ -1,0 +1,669 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 2;
+    color: #3F3E39;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 3320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url('../Image/blackbackground.jpg') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.tophead{
+    height: auto;
+    background: #f4f4f4;
+    text-align: center;
+}
+.tophead h1{
+    color: #3F3E39;
+    font-size: 1.2rem;
+}
+#logo{
+    height: auto;
+    width: 140px;
+    display: block;
+}
+.navbar .navbar-toggler-icon{
+    color: #fff;
+}
+.navbar-dark .navbar-toggler:hover{
+    color: #F9CE1F;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 3px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    background: goldenrod;
+    transform: scale(1.1);
+}
+.center{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f4f4f4;
+}
+.center h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.2; 
+    animation: title 0.7s linear 1;
+}
+@keyframes title{
+	0%{
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+.center p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    animation: title 0.7s linear forwards 1;
+	animation-delay: 0.6s;
+}
+.buttons button{
+    width: 15rem;
+    height: 3.3rem;
+    background: #3F3E39;
+    border: 1px solid #3F3E39;
+    border-radius: 25px;
+    margin-bottom: 4rem;
+    transition: 0.3s;
+}
+.buttons a{
+    color: #f4f4f4;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.buttons button:hover{
+    background: goldenrod;
+    transform: scale(1.1);
+}
+.icons{
+    text-align: center;
+    margin-inline: 1rem;
+    justify-content: center;
+}
+.icons .fa{
+    letter-spacing: 0.8rem;
+    padding: 0.4rem;
+    font-size: 0.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    background: rgba(0, 0,0, 0.4);
+    color: #a09c9c;
+    border-color: #f4f4f4;
+}
+.fa-facebook:hover {
+    border-color: #308AE5;
+    color: #308AE5;
+}
+.fa-instagram:hover {
+    border-color: #BD23CF;
+    color: #BD23CF;
+}
+.fa-google:hover {
+    border-color: #E04525;
+    color: #E04525;
+}
+/******ABOUT PAGE******/
+.about{
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.idpage{
+    background: #fff;
+    margin: 2rem 4rem;
+    width: 35%;
+}
+#mepicture{
+    height: auto;
+    width: 30vw;
+}
+.textbox{
+    background: goldenrod;
+    width: 70%;
+}
+.aboutpage{
+    padding: 4rem 5rem;
+}
+.aboutpage h2{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+.aboutpage p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.aboutpage p span{
+    color: #f4f4f4;
+}
+.arrow .fa{
+    letter-spacing: 1rem;
+    padding: 0.85rem;
+    font-size: 1.3rem;
+    height: 3.3rem;
+    width: 3.3rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    background: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4;
+    border-color: #f4f4f4;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.fa-arrow-up:hover {
+    background: #f4f4f4;
+    color: black;
+    transform: scale(1.1);
+}
+/******SKILL PAGE******/
+.skill{
+    background: #3F3E39;
+    justify-content: center;
+    height: auto;
+}
+.skilltext{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.skilltext h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: goldenrod;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.skilltext p{
+    padding: 2rem 10rem;
+    font-size: 1.2rem;
+    color: #f4f4f4;
+}
+.skillcard{
+    display: flex;
+    height: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.scard{
+    padding: 2rem 2rem;
+    width: 25vw;
+    height: auto;
+    color: #f4f4f4;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0,0, 0);
+    box-shadow: 1px 3px 5px #f4f4f4;
+    border-radius: 15px;
+    line-height: 1.5rem;
+}
+.scard:hover{
+    transform: scale(1.1);
+}
+.scard h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#symbols{
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: goldenrod;
+}
+.scard p{
+    font-size: 1.2rem;
+}
+.scard ul{
+    align-items: center;
+    list-style: none;
+}
+/******PROJECT PAGE******/
+.project{
+    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.3));
+    justify-content: center;
+    min-height: auto;
+}
+.projtext{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.projtext h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: goldenrod;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.projtext p{
+    padding: 2rem 10rem;
+    font-size: 1.2rem;
+    color: #3F3E39;
+}
+.projcard{
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.pcard{
+    padding: 1rem;
+    width: 28vw;
+    height: auto;
+    color: #3F3E39;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0,0, 0);
+    box-shadow: 1px 3px 8px #3F3E39;
+    border-radius: 15px;
+    line-height: 1.5rem;
+}
+.pcard:hover{
+    background: #3F3E39;
+    color: #f4f4f4;
+    transform: scale(1.1);
+}
+#projectpage{
+    align-items: center;
+    width: 25vw;
+    height: 13rem;
+}
+#projectpage:hover{
+    box-shadow: 1px 3px 8px gold;
+}
+.pcard h3{
+    padding: 0.5rem;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.pcard p{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+/******CONTACT PAGE******/
+.contacts{
+    background: goldenrod;
+    justify-content: center;
+    min-height: auto;
+}
+.contactext{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.contactext h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #3F3E39;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.contactext p{
+    padding: 2rem 10rem;
+    font-size: 1.2rem;
+    color: #3F3E39;
+}
+#contactscard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+.ccard{
+    margin-right: 3rem;
+    padding: 1rem;
+    width: 40vw;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background: #3F3E39;
+    box-shadow: 1px 3px 8px #3F3E39;
+    border-radius: 15px;
+    line-height: 1.5rem;
+}
+.ccard h3{
+    color: goldenrod;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ccard ul{
+    list-style: none;
+    line-height: 2.5rem;
+    color: #f4f4f4;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+.ccard2{
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 40vw;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    background: goldenrod;
+    box-shadow: 1px 3px 8px #3F3E39;
+    border-radius: 15px;
+    line-height: 1.5rem;
+}
+.ccard2 h3{
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.ccard2 ul li{
+    list-style: none;
+    text-align: left;
+    line-height: 1rem;
+    color: #3F3E39;
+    padding: 0.3rem 1.8rem;
+    font-size: 1.2rem;
+}
+.ccard2 a{
+    letter-spacing: 1rem;
+    padding: 1.3rem;
+    font-size: 1.4rem;
+    width: 1.3rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    background: goldenrod;
+    color: #f4f4f4;
+    border-color: #f4f4f4;
+}
+.ccicons{
+    justify-content: center;
+}
+.ccicons .fa{
+    letter-spacing: 1rem;
+    padding: 0.65rem;
+    font-size: 0.8rem;
+    height: 2.3rem;
+    width: 2.3rem;
+    text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    background: rgba(0, 0,0, 0.4);
+    color: #a09c9c;
+    border-color: #f4f4f4;
+}
+.fa-facebook:hover {
+    border-color: #308AE5;
+    color: #308AE5;
+}
+.fa-instagram:hover {
+    border-color: #BD23CF;
+    color: #BD23CF;
+}
+.fa-google:hover {
+    border-color: #E04525;
+    color: #E04525;
+}
+#footer{
+    height: 15vh;
+    background: #3F3E39;
+}
+#footer p{
+    padding-top: 2rem;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/******** MEDIA QUERIES *******/
+@media only screen and (max-width:1200px){
+    .center h2{
+        font-size: 2.3rem;
+        line-height: 1;
+        padding-top: 4rem;
+    }
+    .center p{
+        font-size: 1rem;
+    }
+    .buttons button{
+        width: 10rem;
+        height: 3rem;
+    }
+    .buttons a{
+        font-size: 0.7rem;
+    }
+    .aboutpage{
+        padding: 2rem 4rem;
+    }
+    .aboutpage h2{
+        font-size: 2.3rem;
+    }
+    .aboutpage p{
+        font-size: 1.2rem;
+    }
+    .skilltext h2{
+        font-size: 2.3rem;
+    }
+    .skilltext p{
+        font-size: 1.2rem;
+    }
+    .scard h3{
+        font-size: 1.2rem;
+    }
+    .scard p{
+        font-size: 1rem;
+    }
+    .projtext h2{
+        font-size: 2.3rem;
+    }
+    .projtext p{
+        font-size: 1.2rem;
+    }
+    .pcard{
+        height: auto;
+    }
+    .pcard h3{
+        font-size: 1.3rem;
+    }
+    .pcard p{
+        font-size: 1rem;
+    }
+    .contactext h2{
+        font-size: 2.3rem;
+    }
+    .contactext p{
+        font-size: 1.2rem;
+    }
+    .ccard{
+        height: auto;
+    }
+    .ccard h3{
+        font-size: 1.3rem;
+    }
+    .ccard ul{
+        font-size: 1rem;
+    }
+    .ccard2 {
+        height: auto;
+    }
+    .ccard2 h3{
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+    .ccard2 ul li{
+        font-size: 1rem;
+    }
+    .ccard2 a{
+        font-size: 0.8rem;
+    }
+    #footer p{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:1000px){
+    .ccard2 ul li{
+        font-size: 0.8rem;
+    }
+    .ccard2 a{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:900px){
+    .ccard2 ul li{
+        font-size: 0.7rem;
+    }
+    .ccard2 a{
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:850px){
+    .tophead h1{
+        font-size: 1rem;
+    }
+    #logo{
+        width: 110px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .center h2{
+        font-size: 2.1rem;
+    }
+    .center p{
+        font-size: 0.9rem;
+    }
+    .idpage{
+        width: auto;
+        height: auto;
+        margin: 1rem auto;
+    }
+    .textbox{
+        width: auto;
+        height: auto;
+    }    
+    .skilltext p{
+        padding: 2rem 3rem;
+    }
+    .skillcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .scard{
+        margin: 1.5rem;
+        width: 60vw;
+        min-height: 60vh;
+    }
+    .scard h3{
+        font-size: 1.5rem;
+    }
+    .scard p{
+        font-size: 1rem;
+    }
+    .projtext p{
+        padding: 2rem 3rem;
+    }
+    .projcard{
+        display: flex;
+        flex-direction: column;
+    }
+    .pcard{
+        margin: 2rem;
+        width: 50vw;
+    }
+    #projectpage{
+        width: 44vw;
+    }
+    .contactext p{
+        padding: 2rem 3rem;
+    }
+    #contactscard{
+        display: flex;
+        flex-direction: column;
+    }
+    .ccard{
+        margin: 2rem;
+        width: 60vw;
+    }
+    .ccard2{
+        margin: 2rem;
+        width: 60vw;
+    }
+    .ccard2 ul li{
+        font-size: 1rem;
+    }
+    .ccard2 a{
+        font-size: 1rem;
+    }
+    #footer p{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:750px){
+    .ccard2 ul li{
+        font-size: 0.8rem;
+    }
+    .ccard2 a{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:560px){
+    .tophead h1{
+        font-size: 0.8rem;
+    }
+    #logo{
+        width: 110px;
+    }
+    .center h2{
+        font-size: 1.9rem;
+    }
+    .center p{
+        font-size: 0.7rem;
+    }
+    .ccard ul{
+        font-size: 0.8rem;
+    }
+    .ccard2{
+        padding: 0.8rem;
+    }
+    .ccard2 ul li{
+        font-size: 0.7rem;
+    }
+    .ccard2 a{
+        font-size: 0.7rem;
+    }
+    #footer p{
+        font-size: 0.7rem;
+    }
+}
+
+
+
